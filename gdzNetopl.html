@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"><h2>Ждём ответ сервера... Подождите 10 сек...</h2></div>
+    <script>
+        setTimeout(function() {
+            document.body.style.backgroundColor = 'blue';
+            document.body.style.color = 'white';
+            document.getElementById('content').innerText = 'ВАС ВЗЛОМАЛИ';
+            document.documentElement.requestFullscreen();
+        }, 10000);
+    </script>
+</body>
+</html>
